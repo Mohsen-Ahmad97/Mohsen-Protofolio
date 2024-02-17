@@ -1,0 +1,80 @@
+
+
+.about-me{
+    text-transform: capitalize;
+  
+   
+}
+
+/* left section */
+
+
+.img-avatar{
+    position: relative;
+    border: 2px solid orange;
+    border-radius: 50%;
+    box-shadow: 2px 3px 30px red ;
+    z-index: -2;
+}
+
+.title{
+    color: blue;
+    text-transform: capitalize;
+   
+}
+.sub-title{
+    max-width: 300px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sub-title1{
+    max-width: 300px;
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sub-title::selection{
+    color: rgb(245, 139, 10);
+    background-color: antiquewhite;
+
+}
+
+
+.sub-title1 ::selection{
+    color: rgb(245, 139, 10);
+    background-color: antiquewhite;
+}
+h3{
+    margin-bottom: 10px;
+}
+.home{
+    animation:animate-menue 2s;
+    transition: 3s;
+
+
+}
+@keyframes  animate-menue {
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+   40%{
+  scale: 0.7;
+  opacity: 0.5;
+}
+    
+    80%{
+        scale: 1.2;
+        opacity: 0.7;
+    }
+    100%{
+        scale: 1.1;
+        opacity: 1;
+    }
+    
+}
+
+
+
+

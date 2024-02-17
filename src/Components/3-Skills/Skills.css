@@ -1,0 +1,62 @@
+/* left section*/
+button.active {
+   color: blue;
+   opacity: 1;
+ 
+}
+
+/* card styles */
+
+
+.card-animate:hover{
+   border: 2px solid blue;
+   border-radius: 10px;
+   rotate: 2deg;
+
+
+
+}
+.parent-card{
+   
+   animation:card-anim 5s
+}
+.card-animate{
+   animation:card-anim 5s linear  ;
+}
+.ficonavor-icon:hover{
+ color: red;
+}
+
+@keyframes card-anim {
+   0%{
+      
+      
+      scale: 0;
+   }
+   50%{
+      
+   
+      scale:1.2;
+     
+   }
+   100%{
+    
+
+      
+      scale:1;
+     
+   }
+   
+}
+#java-animate{
+   animation: java-animation 6s ;
+
+}
+@keyframes java-animation{
+   0%{
+      transform: translate(-50%);
+   }
+   100%{
+      transform: translate(0);
+   }
+}

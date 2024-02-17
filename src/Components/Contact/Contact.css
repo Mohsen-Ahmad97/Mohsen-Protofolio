@@ -1,0 +1,21 @@
+
+
+
+ /* Animation for Box form */
+
+.contact-animate{
+    animation: contact-anim 5s;
+
+
+}
+
+
+@keyframes contact-anim {
+    0%{
+        transform: translatex(-50%);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}

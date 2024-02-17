@@ -1,0 +1,90 @@
+
+.stac a {
+    text-decoration: none;
+    color: inherit;
+
+}
+.stac a:active{
+    color: aqua;
+    cursor: pointer;
+}
+.stac a:hover{
+    color: rgb(37, 100, 92);
+    cursor: pointer;
+    font-size: 1,03rem;
+}
+
+ /* .menue-item hr:last-child{
+ display: none;
+ } */
+
+.link-menue a{
+    text-decoration: none;
+    color: inherit;
+}
+.link-design{
+    position: relative;
+ 
+}
+.link-design::before{
+content: "";
+position: absolute;
+bottom: 0;
+margin-bottom: -10px;
+width: 0;
+height: 5px;
+transform: translatex(-50%);
+background-color: yellow;
+transition: 1s;
+}
+.link-design:hover:before{
+    transform: translatex(0);
+    width: 100%;
+
+}
+.link-menue a:hover{
+    color: rgb(37, 100, 92);
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+
+.menue-close{
+
+    background-color: rgb(255, 0, 0);
+}
+.back-color{
+    position: fixed;
+    z-index: 3;
+    inset: 0;
+    background-color: rgba(87, 86, 86, 0.836);
+}
+
+.menue-animate{
+    position: fixed;
+    z-index: 999;
+    animation:animate-menue 2s;
+    /* transition: 2s; */
+
+
+    /* animate for menu paper  */
+}
+@keyframes  animate-menue {
+    0%{
+        scale: 0;
+
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+
+@media  (max-width:1000px) {
+
+}

@@ -1,0 +1,35 @@
+.footer-f{
+    animation:footer-animate  10s ;
+    transition: 5s;
+    
+}
+@keyframes footer-animate {
+    0%{
+        transform: translatey(-50%);
+    }
+    100%{
+        transform: translatey(0);
+    }
+    
+}
+.icon-footer{
+    color: rgb(79, 79, 109);
+    transition: 1s;
+}
+.icon-footer:hover{
+    animation: animate-icons 1s
+ 
+}
+@keyframes animate-icons {
+    0%{
+        transform: translatey(25%);
+    }
+  25%{
+    transform: translatey(50%);
+  }
+    100%{
+        transform: translatey(0)
+
+    }
+    
+}
