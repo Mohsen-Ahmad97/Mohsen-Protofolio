@@ -89,12 +89,12 @@ useEffect(()=>{
                     </MenuItem>
 
 
-                    {links.map((item) => {
+                    {links.map((item,index) => {
                         return (
-                            <Box  className="menue-item" >
+                            <Box  className="menue-item"  key ={index} >
                                 <MenuItem className="link-menue">
 
-                                    <Link to={item.PathName} href={item.PathName} >{item.Name}</Link>
+                                    <Link  to={item.PathName} href={item.PathName} >{item.Name}</Link>
                                 
                                     
 
@@ -136,24 +136,19 @@ useEffect(()=>{
                 justifyContent: "space-between", alignItems: "center",
                 ml: "500px"
             }} spacing={4}  >
-              {links.map((item) => {
+              {links.map((item, index) => {
                 return(
-                    <>
+                  
                     
                    
-           <Link to={item.PathName} href={item.PathName}  className="link-design"> {item.Name}</Link>
+           <Link to={item.PathName} href={item.PathName}  key={index} className="link-design"> {item.Name}</Link>
                      
                  
-                    </>
                 )
                 
               }
-              )}
-          <Button onClick={(() => {
-           
-           
-          }
-          )}></Button>
+              )} 
+          
             </Stack>
                {/* light and dark mode button */}
             <IconButton 

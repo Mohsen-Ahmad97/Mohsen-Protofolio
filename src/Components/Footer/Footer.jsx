@@ -13,7 +13,7 @@ const Footer = () => {
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
         {window.scrollY >1350 ? setSho(true):setSho(false)}
-        console.log(window.scrollY)
+       
         
        
     })    },[])

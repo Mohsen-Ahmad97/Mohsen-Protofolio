@@ -67,7 +67,7 @@ const Skills = () => {
         flexDirection:{xs:"column",sm:"column",md:"row"},width:{xs:"80%",sm:"80%",md:"100%"}
          }} 
           className= {show ? 'parent-card':null}  id="Skills">
-         <Typography  sx={{textAlign:'center'}} variant='h2'> Skills </Typography>
+         <Typography   variant='h2' sx={{opacity:show ? 1 :0}}> Skills </Typography>
 
 
 
@@ -80,9 +80,9 @@ const Skills = () => {
                   
             
             }}>
-                {dataTitle.map((itemm) => {
+                {dataTitle.map((itemm,index) => {
                     return (
-                        <Box >
+                        <Box  key={index} >
                           
                             
                             <Button sx={{
@@ -117,9 +117,9 @@ const Skills = () => {
 
 
 
-                {arr.map((item) => {
+                {arr.map((item,index) => {
                     return (
-                        <Card sx={{maxWidth:200 ,height:400}}   
+                        <Card  key={index} sx={{maxWidth:200 ,height:400}}   
                          className= "card-animate" > 
                       
                         
